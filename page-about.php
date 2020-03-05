@@ -1,12 +1,4 @@
 <?php
-/**
- * 名片
- *
- * @package custom
- * @author 林尽欢
- * @link https://iobiji.com/
- * @version 1.0.0
- */
 $this->need('header.php');
 ?>
 <section class="main-hero template-about-me">

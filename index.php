@@ -1,12 +1,4 @@
 <?php
-/**
- * 响应式TYPECHO主题
- *
- * @package Spring
- * @author 林尽欢
- * @version 1.0.1
- * @link https://iobiji.com
- */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php
@@ -61,11 +53,6 @@ if ($this->_currentPage == ceil($this->getTotal() / $this->parameter->pageSize))
         <i class="fas fa-poll-h"></i> <?= Utils::getAuthorPosts($this->author->uid) ?> 篇文章
       </div>
       <div class="text-center main-hero-content-social">
-        <a class="site-tooltip main-hero-content-social-links" target="_blank" rel="noreferrer noopener nofollow"
-           href="<?= $this->options->QQGROUP ?>" data-toggle="tooltip" data-placement="bottom" title=""
-           data-original-title="加入QQ群">
-          <i class="fab fa-qq"></i>
-        </a>
         <a
           class="site-popover main-hero-content-social-links"
           href="#"
@@ -80,11 +67,6 @@ if ($this->_currentPage == ceil($this->getTotal() / $this->parameter->pageSize))
           } ?>' alt='微信二维码'/></div>"
         >
           <i class="fab fa-weixin"></i>
-        </a>
-        <a class="site-tooltip main-hero-content-social-links" target="_blank" rel="noreferrer noopener nofollow"
-           href="<?= $this->options->weibo ?>" data-toggle="tooltip" data-placement="bottom" title=""
-           data-original-title="访问微博">
-          <i class="fab fa-weibo"></i>
         </a>
         <a class="site-tooltip main-hero-content-social-links" target="_blank" rel="noreferrer noopener nofollow"
            href="<?= $this->options->github ?>" data-toggle="tooltip" data-placement="bottom" title=""
@@ -107,8 +89,10 @@ if ($this->_currentPage == ceil($this->getTotal() / $this->parameter->pageSize))
       <div class="text-center main-hero-content-description">该分类下有<?= Utils::getCnums($this->category) ?>篇文章
       </div>
     <?php elseif ($this->is('index')): ?>
-      <div class="text-center main-hero-content-title"><?=$this->options->ititle?></div>
-      <div class="text-center main-hero-content-description home-sentence">我最不喜欢做选择，但我选择了，就一定不后悔。</div>
+      <div class="text-center main-hero-content-title">不急</div>
+      <div class="text-center main-hero-content-description home-sentence">
+         <p>我想变成天边那朵白云 </br>用尽整日晴天</br>只从左边</br>移到右边</br></p>
+      </div>
     <?php endif ?>
   </div>
   <div class="main-hero-waves-area">
@@ -128,7 +112,7 @@ if ($this->_currentPage == ceil($this->getTotal() / $this->parameter->pageSize))
   </div>
 </section>
 
-<main class="main-content">
+<main class="main-content" >
   <div class="container-sm">
     <?php while ($this->next()): ?>
       <article class="row mb-3 my-md-5 post-card home-post-item">

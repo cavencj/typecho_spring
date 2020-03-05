@@ -1,12 +1,4 @@
 <?php
-/**
- * 友链
- *
- * @package custom
- * @author 林尽欢
- * @link https://iobiji.com/
- * @version 1.0.0
- */
 $this->need('header.php');
 ?>
 <body class="page-template page-links spring-body">

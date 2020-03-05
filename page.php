@@ -5,8 +5,12 @@
        style="background-image: url('<?= $this->fields->thumbnail ?>')"></div>
   <div class="d-flex flex-column align-content-center justify-content-center main-hero-content">
     <div class="text-center main-hero-content-title"><?= $this->title; ?></div>
-    <div class="text-center main-hero-content-description"><?php $this->author(); ?>
-      / <?= date('Y-m-d', $this->created) ?></div>
+      <div class="text-center main-hero-content-description"> 
+      <?php
+          if ($this->fields->previewContent)
+            $this->fields->previewContent();
+          ?>
+      </div>
   </div>
   <div class="main-hero-header"></div>
 </section>

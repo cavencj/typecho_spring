@@ -89,8 +89,6 @@ if (!empty($this->options->cdn) && $this->options->cdn) {
       <nav class="navbar navbar-expand-lg header-navbar">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <img src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                 class="d-inline-block align-top navbar-brand-logo" alt="">
             <?= $this->options->title; ?>
           </a>
 

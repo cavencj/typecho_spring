@@ -7,11 +7,10 @@ if (!empty($this->options->cdn) && $this->options->cdn) {
 <footer class="main-footer">
   <div class="container d-flex justify-content-md-between justify-content-center">
     <div class="text-center main-footer-copyright">
-      <p>Powered by <a href="https://typecho.org/" rel="noopener nofollow" target="_blank">TYPECHO</a>. Copyright &copy;
-        2020. Crafted with <a href="https://github.com/JaydenForYou/Spring" target="_blank" rel="noopener nofollow">Spring</a>.
+      <p>Copyright &copy; 2020. Crafted with <a href="https://github.com/cavencj" target="_blank" rel="noopener nofollow">Caven Chen</a>.
       </p>
     </div>
-    <div class="d-none d-md-block main-footer-meta">只争朝夕，不负韶华。</div>
+    <div class="d-none d-md-block main-footer-meta">大鹏一日同风起,扶摇直上九万里。</div>
   </div>
   <div
     class="container d-flex flex-wrap-reverse justify-content-md-between justify-content-center text-center main-footer-audit">
@@ -23,7 +22,7 @@ if (!empty($this->options->cdn) && $this->options->cdn) {
 </footer>
 
 </div>
-<div class="search-wrapper">
+<div class="search-wrapper" style="height:100%">
   <div class="container-sm">
     <button type="button" class="close search-close click-search-close" aria-label="Close">
       <span aria-hidden="true">&times;</span>
