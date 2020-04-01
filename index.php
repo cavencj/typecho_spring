@@ -15,7 +15,11 @@ if ($this->is('index')) {
   if (empty($url)) {
     $url = $_SERVER['REQUEST_URI'];
   }
-  $page = preg_replace("/\/\d+/u", '', $url);
+  $count = substr_count($url,'/');
+  if ($count == 1) {
+    $url = $url.'/';
+  }
+  $page =preg_replace("/\/\d+/u", ' ', $url);
 }
 $prev = $this->_currentPage - 1;
 $next = $this->_currentPage + 1;
@@ -63,7 +67,7 @@ if ($this->_currentPage == ceil($this->getTotal() / $this->parameter->pageSize))
           data-content="<div class='hero-social-wechat'><img src='<?php if ($this->options->wpay != null) {
             echo $this->options->wpay;
           } else {
-            echo 'https://ae01.alicdn.com/kf/He5dccc6dc2d945f184c14f6bed323a4fI.png';
+            echo '';
           } ?>' alt='微信二维码'/></div>"
         >
           <i class="fab fa-weixin"></i>
